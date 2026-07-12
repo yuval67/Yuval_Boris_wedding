@@ -8,6 +8,6 @@ openButton.addEventListener("click", () => {
   setTimeout(() => {
     cover.classList.remove("active");
     invitation.classList.add("active");
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, 1500);
+    window.scrollTo(0, 0);
+  }, 750);
 });
