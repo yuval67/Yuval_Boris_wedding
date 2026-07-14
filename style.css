@@ -110,13 +110,15 @@ body {
   padding: 22px 0 14px;
 }
 
-/* ללא second_bk */
 .open-stage {
   position: relative;
-  width: min(88vw, 780px);
+  width: min(100vw, 1180px);
   aspect-ratio: 1536 / 864;
   margin: 0 auto;
-  background: transparent;
+  background-image: url("assets/second_bk.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   animation: openEnter 0.9s ease forwards;
 }
 
@@ -146,9 +148,9 @@ body {
 /* החלק הקדמי של המעטפה */
 .open-envelope-front {
   position: absolute;
-  width: 56%;
-  left: 22%;
-  bottom: 7.7%;
+  width: 60%;
+  left: 19%;
+  bottom: 6%;
   z-index: 3;
   display: block;
   filter: drop-shadow(0 14px 22px rgba(55, 38, 22, 0.2));
