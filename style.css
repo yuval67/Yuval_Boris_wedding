@@ -105,13 +105,13 @@ body {
 /* דף ההזמנה */
 .invitation {
   background: #f3eadc;
-  padding: 0 0 40px;
+  padding:0;
 }
 
 .open-area {
   width: 100%;
   background: #f3eadc;
-  padding: 0 0 18px;
+  padding:0;
 }
 
 .open-stage {
