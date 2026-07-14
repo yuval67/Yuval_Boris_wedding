@@ -122,9 +122,9 @@ body {
 
 .open-envelope-gif {
   position: absolute;
-  width: 54%;
-  left: 23%;
-  bottom: 4.5%;
+  width: 58%;
+  left: 21%;
+  bottom: 3.5%;
   display: block;
   z-index: 2;
   filter: drop-shadow(0 14px 22px rgba(55, 38, 22, 0.2));
@@ -187,8 +187,13 @@ body {
 @media (max-width: 768px) {
   .cover-stage {
     width: 100vw;
-    padding: 1vh 6vw 5vh;
+    padding: 0 6vw 10vh;
+    justify-content: flex-start;
   }
+
+  .cover-title:first-of-type {
+    margin-top: 11vh;
+``}
 
   .title-1 {
     width: 46vw;
