@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -21,7 +20,7 @@ body {
   display: block;
 }
 
-/* דף פתיחה */
+/* פתיחה */
 .cover {
   background: #f3eadc;
 }
@@ -34,11 +33,9 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   padding: 0 7vw;
 }
 
@@ -54,10 +51,6 @@ body {
 .press-text {
   opacity: 0;
   animation: floatIn 0.9s ease forwards;
-}
-
-.cover-title {
-  display: block;
 }
 
 .title-1 {
@@ -86,11 +79,6 @@ body {
   width: 100%;
   display: block;
   filter: drop-shadow(0 16px 22px rgba(55, 38, 22, 0.22));
-  transition: transform 0.35s ease;
-}
-
-.envelope-button:hover .closed-envelope {
-  transform: translateY(-6px) scale(1.025);
 }
 
 .press-text {
@@ -103,38 +91,38 @@ body {
   animation: fadeOut 0.65s ease forwards;
 }
 
-/* דף ההזמנה */
+/* דף הזמנה */
 .invitation {
   background: #f3eadc;
-  padding:0;
+  padding: 0 0 40px;
 }
 
 .open-area {
   width: 100%;
   background: #f3eadc;
-  padding:0;
+  padding: 0;
 }
 
 .open-stage {
   position: relative;
   width: min(100%, 1536px);
-  aspect-ratio: 1536 / 864;
   margin: 0 auto;
-  background-image: url("assets/second_bk.png");
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+}
+
+.second-background {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .open-envelope-gif {
   position: absolute;
-  width: 85%;
-  left: 10%;
-  bottom: 9.5%;
-  transform: translateX(-50%);
-  display: block;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
   z-index: 2;
-  filter: drop-shadow(0 14px 22px rgba(55, 38, 22, 0.2));
 }
 
 /* שלושת דפי ההזמנה */
@@ -154,7 +142,6 @@ body {
   box-shadow: 0 18px 45px rgba(48, 34, 20, 0.22);
 }
 
-/* כפתור מפות */
 .map-link {
   display: inline-block;
   margin: 10px auto 28px;
@@ -190,13 +177,11 @@ body {
   }
 }
 
-/* התאמה לנייד */
+/* מובייל */
 @media (max-width: 768px) {
   .cover-stage {
     width: 100vw;
     padding: 0 6vw;
-    justify-content: center;
-    align-items: center;
   }
 
   .hero-content {
@@ -223,21 +208,6 @@ body {
     width: 30vw;
     margin-top: 28px;
   }
-
-  .open-area {
-    padding: 0 0 12px;
-  }
-
-  .open-stage {
-    width: 100vw;
-  }
-
-.open-envelope-gif {
-    width: 84%;
-    left: 50%;
-    bottom: 9%;
-    transform: translateX(-50%);
-}
 
   .invite-page {
     margin-bottom: 16px;
