@@ -73,6 +73,7 @@ body {
   cursor: pointer;
   width: min(49vw, 360px);
   animation-delay: 0.9s;
+  margin-top: -18px;
 }
 
 .closed-envelope {
@@ -87,8 +88,8 @@ body {
 }
 
 .press-text {
-  width: min(24vw, 175px);
-  margin-top: -20px;
+  width: min(28vw, 210px);
+  margin-top: -14px;
   animation-delay: 1.25s;
 }
 
@@ -126,9 +127,9 @@ body {
 .open-envelope-back,
 .open-envelope-front {
   position: absolute;
-  width: 54%;
-  left: 23%;
-  bottom: 4.5%;
+  width: 48%;
+  left: 26%;
+  bottom: 5.5%;
   display: block;
   filter: drop-shadow(0 14px 22px rgba(55, 38, 22, 0.2));
 }
@@ -141,11 +142,10 @@ body {
   z-index: 3;
 }
 
-/* הפתק בין שתי שכבות המעטפה */
 .open-note {
   position: absolute;
-  width: 31%;
-  left: 34.5%;
+  width: 27%;
+  left: 36.5%;
   bottom: 39%;
   z-index: 2;
   transform: translateY(28px);
@@ -244,11 +244,12 @@ body {
 
   .envelope-button {
     width: 58vw;
+    margin-top: -18px;
   }
 
   .press-text {
-    width: 28vw;
-    margin-top: -20px;
+    width: 32vw;
+    margin-top: -14px;
   }
 
   .open-area {
@@ -261,14 +262,14 @@ body {
 
   .open-envelope-back,
   .open-envelope-front {
-    width: 56%;
-    left: 22%;
-    bottom: 4.5%;
+    width: 50%;
+    left: 25%;
+    bottom: 5.5%;
   }
 
   .open-note {
-    width: 33%;
-    left: 33.5%;
+    width: 29%;
+    left: 35.5%;
     bottom: 39%;
   }
 
