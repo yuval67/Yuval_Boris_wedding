@@ -35,11 +35,17 @@ body {
   background-repeat: no-repeat;
 
   display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 7vw;
+}
+
+.hero-content {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-
-  padding: 1vh 7vw 5vh;
+  transform: translateY(-2vh);
 }
 
 .cover-title,
@@ -88,7 +94,7 @@ body {
 
 .press-text {
   width: min(24vw, 175px);
-  margin-top: 4px;
+  margin-top: 8px;
   animation-delay: 1.25s;
 }
 
@@ -122,9 +128,9 @@ body {
 
 .open-envelope-gif {
   position: absolute;
-  width: 58%;
-  left: 21%;
-  bottom: 3.5%;
+  width: 64%;
+  left: 18%;
+  bottom: 7%;
   display: block;
   z-index: 2;
   filter: drop-shadow(0 14px 22px rgba(55, 38, 22, 0.2));
@@ -187,23 +193,24 @@ body {
 @media (max-width: 768px) {
   .cover-stage {
     width: 100vw;
-    padding: 0 6vw 10vh;
-    justify-content: flex-start;
+    padding: 0 6vw;
+    justify-content: center;
+    align-items: center;
   }
 
-  .cover-title:first-of-type {
-    margin-top: 11vh;
-``}
+  .hero-content {
+    transform: translateY(-9vh);
+  }
 
   .title-1 {
     width: 46vw;
-    margin-bottom: -16px;
+    margin-bottom: -14px;
   }
 
   .title-2 {
     width: 70vw;
     margin-top: -8px;
-    margin-bottom: -24px;
+    margin-bottom: -20px;
   }
 
   .envelope-button {
@@ -211,7 +218,7 @@ body {
   }
 
   .press-text {
-    width: 28vw;
+    width: 30vw;
     margin-top: 18px;
   }
 
@@ -224,9 +231,9 @@ body {
   }
 
   .open-envelope-gif {
-    width: 56%;
-    left: 22%;
-    bottom: 4.5%;
+    width: 68%;
+    left: 16%;
+    bottom: 8%;
   }
 
   .invite-page {
