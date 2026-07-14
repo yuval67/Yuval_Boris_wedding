@@ -129,7 +129,7 @@ body {
 .open-envelope-gif {
   position: absolute;
   width: 85%;
-  left: 20%;
+  left: 50%;
   bottom: 9.5%;
   transform: translateX(-50%);
   display: block;
@@ -232,11 +232,12 @@ body {
     width: 100vw;
   }
 
-  .open-envelope-gif {
+.open-envelope-gif {
     width: 84%;
     left: 50%;
     bottom: 9%;
-  }
+    transform: translateX(-50%);
+}
 
   .invite-page {
     margin-bottom: 16px;
