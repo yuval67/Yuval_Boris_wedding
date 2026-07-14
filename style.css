@@ -145,7 +145,7 @@ body {
   position: absolute;
   width: 31%;
   left: 34.5%;
-  bottom: 39%;
+  bottom: 37%;
   z-index: 2;
   transform: translateY(28px);
   animation: noteRise 1.1s ease forwards;
